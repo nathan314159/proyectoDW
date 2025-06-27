@@ -12,4 +12,7 @@ $routes->get('/helloWorld', 'Home::hello');
 $routes->get('/tablas', 'DeberSemana8::tablaDeMultiplicar');
 $routes->get('/potencias', 'DeberSemana8::potencias');
 
+// semana 9 trabajo en clases 
+$routes->get('/claseS9', 'Home::claseS9');
 
+$routes->get('/catalogo', 'Home::catalogo');
