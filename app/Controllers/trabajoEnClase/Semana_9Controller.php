@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\trabajoEnClase;
+use App\Controllers\BaseController;
 
-class Home extends BaseController
+class Semana_9Controller extends BaseController
 {
     public function index(): string
     {

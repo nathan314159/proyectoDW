@@ -23,7 +23,7 @@
             <div class="card shadow">
                 <div class="card-body">
                     <h4 class="card-title text-center mb-4">Formulario</h4>
-                    <form action="<?= base_url("/catalogo/suma") ?>" method="post">
+                    <form action="<?= base_url("trabajo/semana9/catalogo/suma") ?>" method="post">
                         <div class="mb-3">
                             <label for="num1" class="form-label">Ingrese número 1</label>
                             <input type="text" class="form-control" id="num1" name="num1" placeholder="Número 1">

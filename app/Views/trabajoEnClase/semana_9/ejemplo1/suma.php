@@ -82,7 +82,7 @@
     <div class="contenedor">
         <h2>Suma de dos numeros</h2>
         <div class="suma">
-            <form action="<?= base_url("/suma/respuesta")?>" method="post">
+            <form action="<?= base_url("/proyectos/suma/respuesta")?>" method="post">
                 <div class="num1">
                     <label for="num1">Ingrese Numero 1</label>
                     <input type="text" name="num1" id="num1" placeholder="Ingrese una numero...">

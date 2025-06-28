@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers\semana9;
+namespace App\Controllers\proyectosPersonales;
 
 use App\Controllers\BaseController;
 
@@ -8,7 +8,7 @@ class SumaController extends BaseController
 {
     public function funcSumar()
     {
-        return view('clase_semana_9/ejemplo1/suma');
+        return view('trabajoEnclase/semana_9/ejemplo1/suma');
     }
 
     public function funcRespuesta()
@@ -23,6 +23,6 @@ class SumaController extends BaseController
             "res" => $respuesta
         ];
 
-        return view('clase_semana_9/ejemplo1/sumaRespuesta', $data);
+        return view('trabajoEnclase/semana_9/ejemplo1/sumaRespuesta', $data);
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\deberes;
 
 use App\Controllers\BaseController;
 
-class DeberSemana8 extends BaseController
+class Semana_8Controller extends BaseController
 {
     public function tablaDeMultiplicar()
     {
