@@ -23,14 +23,14 @@
             <div class="card shadow">
                 <div class="card-body">
                     <h4 class="card-title text-center mb-4">Formulario</h4>
-                    <form action="#">
+                    <form action="<?= base_url("/catalogo/suma") ?>" method="post">
                         <div class="mb-3">
                             <label for="num1" class="form-label">Ingrese número 1</label>
-                            <input type="text" class="form-control" id="num1" placeholder="Número 1">
+                            <input type="text" class="form-control" id="num1" name="num1" placeholder="Número 1">
                         </div>
                         <div class="mb-3">
                             <label for="num2" class="form-label">Ingrese número 2</label>
-                            <input type="text" class="form-control" id="num2" placeholder="Número 2">
+                            <input type="text" class="form-control" id="num2" name="num2" placeholder="Número 2">
                         </div>
                         <div class="d-grid">
                             <button id="button" type="submit" class="btn btn-primary">Enviar</button>
@@ -46,19 +46,6 @@
 
 
 </body>
-<script>
-    const num1ID = document.getElementById("num1");
-    const num2ID = document.getElementById("num2");
-    const buttonID = document.getElementById("button");
-    const resID = document.getElementById("res");
 
-    buttonID.addEventListener("click", (e) => {
-        const val1 = parseInt(num1ID.value);
-        const val2 = parseInt(num2ID.value);
-
-        const suma = val1 + val2;
-        resID.textContent = suma;
-    })
-</script>
 
 </html>

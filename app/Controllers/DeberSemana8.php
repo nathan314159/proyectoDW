@@ -8,11 +8,11 @@ class DeberSemana8 extends BaseController
 {
     public function tablaDeMultiplicar()
     {
-        return view('DeberSemana8/tablaMultiplicar');
+        return view('deberes/semana_8/tablaMultiplicar');
     }
 
         public function potencias()
     {
-        return view('DeberSemana8/potencias');
+        return view('deberes/semana_8/potencias');
     }
 }
