@@ -61,7 +61,7 @@
             let respuesta = ""; // Variable que acumulará la tabla HTML
 
             // Si no es un número válido, muestra una alerta
-            if (isNaN(val)) {
+            if (isNaN(val) || val < 0) {
                 resId.innerHTML = `<div class="alert alert-danger">Por favor ingrese un número válido.</div>`;
                 return;
             }

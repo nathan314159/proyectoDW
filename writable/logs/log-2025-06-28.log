@@ -300,3 +300,60 @@ in SYSTEMPATH\Router\Router.php on line 496.
  6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
  7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 19:25:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "proyectosPersonales/paginaPrincipal.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('proyectosPersonales/paginaPrincipal.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosPersonales/paginaPrincipal', [], true)
+ 3 APPPATH\Controllers\proyectosPersonales\Home.php(11): view('proyectosPersonales/paginaPrincipal')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 19:27:43 --> Error: Call to undefined function App\Controllers\proyectosPersonales\vie()
+[Method: GET, Route: /]
+in APPPATH\Controllers\proyectosPersonales\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 19:29:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "proyectosPersonales/paginaPrincipal.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('proyectosPersonales/paginaPrincipal.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosPersonales/paginaPrincipal', [], true)
+ 3 APPPATH\Controllers\proyectosPersonales\Home.php(11): view('proyectosPersonales/paginaPrincipal')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 19:32:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "proyectosPersonales222/paginaPrincipal.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('proyectosPersonales222/paginaPrincipal.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosPersonales222/paginaPrincipal', [], true)
+ 3 APPPATH\Controllers\proyectosPersonales\Home.php(11): view('proyectosPersonales222/paginaPrincipal')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 19:33:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "proyectosPersonales/paginaPrincipal.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('proyectosPersonales/paginaPrincipal.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosPersonales/paginaPrincipal', [], true)
+ 3 APPPATH\Controllers\proyectosPersonales\Home.php(11): view('proyectosPersonales/paginaPrincipal')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

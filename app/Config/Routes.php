@@ -6,8 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-$routes->get('/', 'Home::index');
-
+$routes->get('/', 'proyectosPersonales\Home::index');
 
 $routes->group('trabajos', function ($routes) {
 
@@ -23,9 +22,10 @@ $routes->group('trabajos', function ($routes) {
 
 $routes->group('deberes', function ($routes){
     // semana 8
+    $routes->get('semana8', 'deberes\Semana_8Controller::index');
     $routes->get('semana8/tablas', 'deberes\Semana_8Controller::tablaDeMultiplicar');
     $routes->get('semana8/potencias', 'deberes\Semana_8Controller::potencias');
-
+        
     // semana 9
 });
 
