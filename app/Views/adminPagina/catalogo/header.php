@@ -23,7 +23,7 @@
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Deberes</a>
             <ul class="dropdown-menu">
              <li><a class="dropdown-item" href="<?= base_url('deberes/semana8') ?>">Semana 8</a></li>
-              <li><a class="dropdown-item" href="#">Semana 9</a></li>
+              <li><a class="dropdown-item" href="<?= base_url('deberes/semana9')?>">Semana 9</a></li>
               <li><a class="dropdown-item" href="#">Semana 10</a></li>
               <li><a class="dropdown-item" href="#">Semana 11</a></li>
             </ul>

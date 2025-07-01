@@ -6,6 +6,10 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
+
+
+//** Puedes agrupar tus rutas bajo un nombre común usando el método group(). El nombre del grupo se convierte en un segmento que aparece antes de las rutas definidas dentro del grupo. Esto te permite reducir la cantidad de escritura necesaria para construir un conjunto extenso de rutas que comparten la misma cadena inicial. */
+
 $routes->get('/', 'adminPagina\Home::index');
 
 $routes->group('trabajos', function ($routes) {
@@ -29,6 +33,20 @@ $routes->group('deberes', function ($routes) {
     $routes->get('semana8/potencias', 'deberes\Semana_8Controller::potencias');
 
     // semana 9
+
+    $routes->get('semana9', 'deberes\semana9\ControladorIndex::index');
+
+    // las rutas de los controladores de carteras
+    $routes->get('semana9/C1', 'deberes\semana9\ControladorCartera::carteraDeHombro');
+    $routes->get('semana9/C2', 'deberes\semana9\ControladorCartera::carteraDeMano');
+
+    // las rutas de los controladores de vestidos
+    $routes->get('semana9/V1', 'deberes\semana9\ControladorVestido::vestidoDeFiesta');
+    $routes->get('semana9/V2', 'deberes\semana9\ControladorVestido::vestidoFormal');
+
+    // las rutas de los controladores de zapatos
+    $routes->get('semana9/Z1', 'deberes\semana9\ControladorZapatos::ZapatosDeportivos');
+    $routes->get('semana9/Z2', 'deberes\semana9\ControladorZapatos::ZapatosCasual');
 });
 
 $routes->group('proyectos', function ($routes) {

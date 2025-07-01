@@ -1,0 +1,12 @@
+CRITICAL - 2025-07-01 02:31:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "deberes/semana_9/application/views/ContenedorCarteras.php"
+[Method: GET, Route: deberes/semana9/carteraDeHombro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deberes/semana_9/application/views/ContenedorCarteras.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('deberes/semana_9/application/views/ContenedorCarteras', [], true)
+ 3 APPPATH\Controllers\deberes\semana9\ControladorCartera.php(15): view('deberes/semana_9/application/views/ContenedorCarteras')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\deberes\semana9\ControladorCartera->carteraDeHombro()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deberes\semana9\ControladorCartera))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
