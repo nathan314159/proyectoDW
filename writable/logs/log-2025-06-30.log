@@ -1,0 +1,45 @@
+CRITICAL - 2025-06-30 00:39:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "proyectosPersonales/juego.php"
+[Method: GET, Route: proyectos/semana8/juego]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('proyectosPersonales/juego.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosPersonales/juego', [], true)
+ 3 APPPATH\Controllers\trabajoEnClase\Semana_8Controller.php(10): view('proyectosPersonales/juego')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_8Controller->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_8Controller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-30 01:05:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "trabajoEnClase/semana_9/ejemplo1/sumaRespuesta.php"
+[Method: GET, Route: trabajos/semana9/suma]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('trabajoEnClase/semana_9/ejemplo1/sumaRespuesta.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_9/ejemplo1/sumaRespuesta', [], true)
+ 3 APPPATH\Controllers\trabajoEnClase\Semana_9Controller.php(42): view('trabajoEnClase/semana_9/ejemplo1/sumaRespuesta', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_9Controller->suma()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_9Controller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-30 01:25:14 --> TypeError: Unsupported operand types: string + string
+[Method: POST, Route: trabajos/semana9/suma/respuesta]
+in APPPATH\Controllers\trabajoEnClase\Semana_9Controller.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_9Controller->funcRespuesta()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_9Controller))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-30 01:39:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "proyectosPersonales/index.php"
+[Method: GET, Route: proyectos/inicio]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('proyectosPersonales/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosPersonales/index', [], true)
+ 3 APPPATH\Controllers\proyectosPersonales\Home.php(11): view('proyectosPersonales/index')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -43,6 +43,7 @@
 
             </div>
         </div>
+        <a href="<?= base_url("/deberes/semana8")?>">Regresar a pagina anterior</a>
     </div>
 
     <!-- Script que maneja la lógica de generar la tabla de multiplicar -->

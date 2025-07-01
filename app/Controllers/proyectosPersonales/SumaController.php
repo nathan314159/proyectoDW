@@ -25,4 +25,6 @@ class SumaController extends BaseController
 
         return view('trabajoEnclase/semana_9/ejemplo1/sumaRespuesta', $data);
     }
+
+
 }

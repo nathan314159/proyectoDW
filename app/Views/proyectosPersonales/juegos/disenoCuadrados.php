@@ -24,6 +24,7 @@
         justify-content: center;
         align-items: center;
         height: 100%;
+        flex-direction: column;
     }
 
     .contenedor {
@@ -38,7 +39,7 @@
     .cuadrados {
         gap: 200px;
         display: grid;
-        grid-template-columns: repeat(2, 200px); 
+        grid-template-columns: repeat(2, 200px);
         grid-template-rows: repeat(2, 200px);
     }
 
@@ -61,11 +62,11 @@
     }
 
     #cuadrado4 {
-        background:lightgreen;
+        background: lightgreen;
     }
-    
-    .circle{
-               height: 100px;
+
+    .circle {
+        height: 100px;
         width: 100px;
         background: coral;
     }
@@ -89,6 +90,8 @@
                 </div>
             </div>
         </div>
+        <a href="<?= base_url('proyectos/inicio') ?>">Regresar a la pagina anterior</a>
+
     </main>
 </body>
 

@@ -19,6 +19,7 @@
             justify-content: center;
             align-items: center;
             height: 100%;
+
         }
 
         .outer-container {
@@ -67,7 +68,9 @@
             <div class="screen">
                 <div id="square"></div>
             </div>
+            
         </div>
+        <a href="<?=base_url('proyectos/inicio')?>">Regresar a la pagina anterior</a>
     </main>
 
     <script>

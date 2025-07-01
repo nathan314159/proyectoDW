@@ -52,6 +52,7 @@
 
             </div>
         </div>
+        <a href="<?= base_url("/deberes/semana8")?>">Regresar a pagina anterior</a>
     </div>
 
     <!-- SCRIPT: genera las potencias al enviar el formulario -->

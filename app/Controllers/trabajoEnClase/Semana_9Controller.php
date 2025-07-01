@@ -1,10 +1,14 @@
 <?php
 
 namespace App\Controllers\trabajoEnClase;
+
 use App\Controllers\BaseController;
 
 class Semana_9Controller extends BaseController
 {
+
+    
+
     public function index(): string
     {
         return view('proyectosPersonales/juego');
@@ -29,6 +33,13 @@ class Semana_9Controller extends BaseController
 
     public function suma()
     {
+        echo view("trabajoEnClase/semana_9/catalogo/header");
+        echo view('trabajoEnClase/semana_9/practica1/suma');
+        echo view("trabajoEnClase/semana_9/catalogo/footer");
+    }
+
+    public function funcRespuesta()
+    {
         $vnum1 = $this->request->getPost("num1");
         $vnum2 = $this->request->getPost("num2");
         var_dump($vnum1, $vnum2);
@@ -39,6 +50,6 @@ class Semana_9Controller extends BaseController
             "res" => $resultado
         ];
 
-        echo view('trabajoEnClase/semana_9/ejemplo1/sumaRespuesta', $data);
+        echo view('trabajoEnClase/semana_9/practica1/sumaRespuesta', $data);
     }
 }

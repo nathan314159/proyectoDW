@@ -2,63 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="<?= base_url('public/css/bootstrap.min.css') ?>">
-<script src="<?= base_url('public/css/bootstrap.bundle.js.map') ?>"></script>
-    <title>Document</title>
-</head>
-<style>
-    *{
-        padding: 0;
-        
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body, html {
+      height: 100%;
     }
-</style>
+
+    .contenedor {
+      padding: 8rem;
+    }
+
+    .row.mt-4 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .card {
+      width: 18rem;
+    }
+  </style>
+</head>
+
 <body>
-    <main>
-        <div class="container">
-            <form action="">
-
-
-                <div>
-                    <label for="num1">Num1</label>
-                    <input type="number" id="num1">
-                </div>
-                <div>
-                    <label for="num2">Num2</label>
-                    <input type="number" id="num2">
-                </div>
-                <div>
-                    <label for="num3">Num3</label>
-                    <input type="number" id="num3">
-                </div>
-
-
-                <button type="submit" id="submit">Enviar</button>
-            </form>
+  <div class="contenedor">
+    <div class="row mt-4">
+      <div class="col-auto">
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title">Juego de cajas</h5>
+            <p class="card-text">se mueve la caja en una dimension 2D con las flechas.</p>
+            <a href="<?= base_url('proyectos/juego') ?>" class="btn btn-primary">Ver</a>
+          </div>
         </div>
-        <div><label for="" id="label"></label></div>
-    </main>
+      </div>
+
+      <div class="col-auto">
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title">Estilo cuadrado</h5>
+            <p class="card-text">Es un diseño de cuadrados, lo quee con el fin de entender los divs anidados.</p>
+            <a href="<?= base_url('proyectos/estilo') ?>" class="btn btn-primary">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-<script>
-    const numId1 = document.getElementById("num1");
-    const numId2 = document.getElementById("num2");
-    const numId3 = document.getElementById("num3");
-    const submitId = document.getElementById("submit");
-    const labelId = document.getElementById("label");
-
-
-
-
-    submitId.addEventListener("click", (e) => {
-        e.preventDefault();
-        const val1 = parseInt(numId1.value)  || 0;
-        const val2 = parseInt(numId2.value)  || 0;
-        const val3 = parseInt(numId3.value)  || 0;
-        const res = val1 + val2 + val3;
-
-        labelId.textContent = res;
-    });
-</script>
 
 </html>
