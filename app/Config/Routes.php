@@ -24,6 +24,12 @@ $routes->group('trabajos', function ($routes) {
 
     $routes->get('semana9/suma', "trabajoEnClase\Semana_9Controller::suma");
     $routes->post('semana9/suma/respuesta', 'trabajoEnClase\Semana_9Controller::funcRespuesta');
+
+    //semana 10
+    $routes->get('semana10', 'trabajoEnClase\Semana_10Controller::index');
+    $routes->get('semana10/card', 'trabajoEnClase\Semana_10Controller::card');
+    $routes->get('semana10/triangulo', 'trabajoEnClase\Semana_10Controller::triangulo');
+
 });
 
 $routes->group('deberes', function ($routes) {
