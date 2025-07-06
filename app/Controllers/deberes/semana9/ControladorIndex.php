@@ -4,8 +4,7 @@ namespace App\Controllers\deberes\semana9;
 
 use App\Controllers\BaseController;
 
-// la razon que cree este controlador es con el fin de mantener la armonia de la estructura que yo elegi
-
+// la razon que cree este controlador es con el fin de mantener la armonia de la estructura que yo cree.
 class ControladorIndex extends BaseController
 {
 
