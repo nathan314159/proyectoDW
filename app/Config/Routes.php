@@ -33,7 +33,7 @@ $routes->group('deberes', function ($routes) {
     $routes->get('semana8/potencias', 'deberes\Semana_8Controller::potencias');
 
     // semana 9
-
+    // en las ruta C1,C2,V1,V2,Z1,Z2 ingresar con mayusculas
     $routes->get('semana9', 'deberes\semana9\ControladorIndex::index');
 
     // las rutas de los controladores de carteras
@@ -47,6 +47,21 @@ $routes->group('deberes', function ($routes) {
     // las rutas de los controladores de zapatos
     $routes->get('semana9/Z1', 'deberes\semana9\ControladorZapatos::ZapatosDeportivos');
     $routes->get('semana9/Z2', 'deberes\semana9\ControladorZapatos::ZapatosCasual');
+
+    // semana 10 
+    // login
+    $routes->get('semana10', 'deberes\semana10\ControladorLogin::index');
+    $routes->post('semana10/login', 'deberes\semana10\ControladorLogin::login');
+    $routes->get('semana10/login', 'deberes\semana10\ControladorLogin::login');
+    // rutas con parametros 
+    $routes->get('semana10/carteras/(:num)', 'deberes\semana10\CarterasController::verCartera/$1');
+    $routes->get('semana10/zapatos/(:num)', 'deberes\semana10\ZapatosController::verZapatos/$1');
+    $routes->get('semana10/vestidos/(:num)', 'deberes\semana10\VestidosController::vervestidos/$1');
+
+
+
+
+
 });
 
 $routes->group('proyectos', function ($routes) {

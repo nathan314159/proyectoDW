@@ -1,0 +1,156 @@
+CRITICAL - 2025-07-06 16:03:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "deberes/semana10/carteras/1.php"
+[Method: GET, Route: deberes/semana10/carteras/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deberes/semana10/carteras/1.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('deberes/semana10/carteras/1', [], true)
+ 3 APPPATH\Controllers\deberes\semana10\CarterasController.php(17): view('deberes/semana10/carteras/1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\deberes\semana10\CarterasController->verCarteraDeMano('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deberes\semana10\CarterasController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-06 16:11:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "deberes/semana10/carteras/1.php"
+[Method: GET, Route: deberes/semana10/carteras/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deberes/semana10/carteras/1.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('deberes/semana10/carteras/1', [], true)
+ 3 APPPATH\Controllers\deberes\semana10\CarterasController.php(17): view('deberes/semana10/carteras/1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\deberes\semana10\CarterasController->verCarteraDeMano('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deberes\semana10\CarterasController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-06 19:40:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "deberes/semana_10/carteras/1.php"
+[Method: GET, Route: deberes/semana10/carteras/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deberes/semana_10/carteras/1.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('deberes/semana_10/carteras/1', [], true)
+ 3 APPPATH\Controllers\deberes\semana10\CarterasController.php(13): view('deberes/semana_10/carteras/1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\deberes\semana10\CarterasController->verCarteraDeMano('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deberes\semana10\CarterasController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-06 19:40:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "deberes/semana_10/carteras/1.php"
+[Method: GET, Route: deberes/semana10/carteras/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deberes/semana_10/carteras/1.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('deberes/semana_10/carteras/1', [], true)
+ 3 APPPATH\Controllers\deberes\semana10\CarterasController.php(13): view('deberes/semana_10/carteras/1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\deberes\semana10\CarterasController->verCarteraDeMano('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deberes\semana10\CarterasController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-06 19:43:28 --> ParseError: Unclosed '{' on line 29
+[Method: GET, Route: deberes/semana10/carteras/1]
+in APPPATH\Config\Routes.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-06 19:43:58 --> ParseError: Unclosed '{' on line 29
+[Method: GET, Route: deberes/semana10/carteras/1]
+in APPPATH\Config\Routes.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-06 19:44:37 --> ArgumentCountError: Too few arguments to function App\Controllers\deberes\semana10\CarterasController::verCarteraDeMano(), 0 passed in C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: deberes/semana10/carteras/1]
+in APPPATH\Controllers\deberes\semana10\CarterasController.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\deberes\semana10\CarterasController->verCarteraDeMano()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deberes\semana10\CarterasController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-06 19:52:13 --> ArgumentCountError: Too few arguments to function App\Controllers\deberes\semana10\CarterasController::verCarteraDeMano(), 0 passed in C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: deberes/semana10/carteras/1]
+in APPPATH\Controllers\deberes\semana10\CarterasController.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\deberes\semana10\CarterasController->verCarteraDeMano()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deberes\semana10\CarterasController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-06 19:54:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "deberes/semana_10/carteras/1.php"
+[Method: GET, Route: deberes/semana10/carteras/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deberes/semana_10/carteras/1.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('deberes/semana_10/carteras/1', [], true)
+ 3 APPPATH\Controllers\deberes\semana10\CarterasController.php(13): view('deberes/semana_10/carteras/1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\deberes\semana10\CarterasController->verCarteraDeMano('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deberes\semana10\CarterasController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-06 19:54:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "deberes/semana_10/carteras/2.php"
+[Method: GET, Route: deberes/semana10/carteras/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deberes/semana_10/carteras/2.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('deberes/semana_10/carteras/2', [], true)
+ 3 APPPATH\Controllers\deberes\semana10\CarterasController.php(17): view('deberes/semana_10/carteras/2')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\deberes\semana10\CarterasController->verCarteraDeMano('2')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deberes\semana10\CarterasController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-06 19:54:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "deberes/semana_10/carteras/1.php"
+[Method: GET, Route: deberes/semana10/carteras/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deberes/semana_10/carteras/1.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('deberes/semana_10/carteras/1', [], true)
+ 3 APPPATH\Controllers\deberes\semana10\CarterasController.php(13): view('deberes/semana_10/carteras/1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\deberes\semana10\CarterasController->verCarteraDeMano('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deberes\semana10\CarterasController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-06 20:00:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "deberes/semana_10/carteras/1.php"
+[Method: GET, Route: deberes/semana10/carteras/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deberes/semana_10/carteras/1.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('deberes/semana_10/carteras/1', [], true)
+ 3 APPPATH\Controllers\deberes\semana10\CarterasController.php(13): view('deberes/semana_10/carteras/1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\deberes\semana10\CarterasController->verCarteraDeMano('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deberes\semana10\CarterasController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-06 20:23:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "deberes/semana_10/zapatos/C1.php"
+[Method: GET, Route: deberes/semana10/zapatos/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deberes/semana_10/zapatos/C1.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('deberes/semana_10/zapatos/C1', [], true)
+ 3 APPPATH\Controllers\deberes\semana10\ZapatosController.php(13): view('deberes/semana_10/zapatos/C1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\deberes\semana10\ZapatosController->verZapatos('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deberes\semana10\ZapatosController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-06 20:25:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "deberes/semana_10/vestidos/Z2.php"
+[Method: GET, Route: deberes/semana10/vestidos/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('deberes/semana_10/vestidos/Z2.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('deberes/semana_10/vestidos/Z2', [], true)
+ 3 APPPATH\Controllers\deberes\semana10\VestidosController.php(17): view('deberes/semana_10/vestidos/Z2')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\deberes\semana10\VestidosController->verVestidos('2')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\deberes\semana10\VestidosController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
