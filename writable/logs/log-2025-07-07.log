@@ -1,0 +1,302 @@
+CRITICAL - 2025-07-07 21:25:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "trabajoEnclase/semana_9/ejemplo1/suma.php"
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('trabajoEnclase/semana_9/ejemplo1/suma.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnclase/semana_9/ejemplo1/suma', [], true)
+ 3 APPPATH\Controllers\proyectosPersonales\SumaController.php(11): view('trabajoEnclase/semana_9/ejemplo1/suma')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\SumaController->funcSumar()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\SumaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-07 21:40:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "proyectosPersonales/generaAleatorio.php"
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('proyectosPersonales/generaAleatorio.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosPersonales/generaAleatorio', [], true)
+ 3 APPPATH\Controllers\proyectosDeSoftware\GeneraAleatorio.php(12): view('proyectosPersonales/generaAleatorio')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\GeneraAleatorio->d()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\GeneraAleatorio))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-07 21:41:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "proyectosPersonales/generaAleatorio.php"
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('proyectosPersonales/generaAleatorio.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosPersonales/generaAleatorio', [], true)
+ 3 APPPATH\Controllers\proyectosDeSoftware\GeneraAleatorio.php(12): view('proyectosPersonales/generaAleatorio')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\GeneraAleatorio->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\GeneraAleatorio))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-07 21:57:59 --> ErrorException: Undefined variable $nombre
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio]
+in APPPATH\Views\proyectosDeSoftware\generaAleatorio.php on line 38.
+ 1 APPPATH\Views\proyectosDeSoftware\generaAleatorio.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nombre', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosDeSoftware/generaAleatorio', [], true)
+ 5 APPPATH\Controllers\proyectosDeSoftware\GeneraAleatorio.php(12): view('proyectosDeSoftware/generaAleatorio')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\GeneraAleatorio->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\GeneraAleatorio))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-07 22:12:02 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\proyectoDW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\proyectoDW\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoDW\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\proyectoDW\app\Controllers\proyectosDeSoftware\HistoriaController.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+#8 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+#9 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\proyectoDW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\proyectoDW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\proyectoDW\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\proyectoDW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\proyectoDW\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\proyectoDW\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\proyectoDW\app\Controllers\proyectosDeSoftware\HistoriaController.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+#7 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+#8 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoDW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\proyectoDW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\proyectoDW\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-07-07 22:12:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio/nombre]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_historia`
+ORDER BY RAND()
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\proyectosDeSoftware\HistoriaController.php(15): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-07 22:14:35 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ci4' in C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4', 3306, '', 0)
+#1 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\proyectoDW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\proyectoDW\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoDW\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\proyectoDW\app\Controllers\proyectosDeSoftware\HistoriaController.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+#8 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+#9 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\proyectoDW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\proyectoDW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\proyectoDW\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ci4' in C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\proyectoDW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\proyectoDW\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\proyectoDW\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\proyectoDW\app\Controllers\proyectosDeSoftware\HistoriaController.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+#7 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+#8 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoDW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\proyectoDW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\proyectoDW\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-07-07 22:14:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ci4'
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio/nombre]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_historia`
+ORDER BY RAND()
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\proyectosDeSoftware\HistoriaController.php(15): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-07 22:20:46 --> ErrorException: Array to string conversion
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio/nombre]
+in APPPATH\Views\proyectosDeSoftware\generaAleatorio.php on line 70.
+ 1 APPPATH\Views\proyectosDeSoftware\generaAleatorio.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosDeSoftware/generaAleatorio', [], true)
+ 5 APPPATH\Controllers\proyectosDeSoftware\HistoriaController.php(17): view('proyectosDeSoftware/generaAleatorio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-07 22:20:48 --> ErrorException: Array to string conversion
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio/nombre]
+in APPPATH\Views\proyectosDeSoftware\generaAleatorio.php on line 70.
+ 1 APPPATH\Views\proyectosDeSoftware\generaAleatorio.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosDeSoftware/generaAleatorio', [], true)
+ 5 APPPATH\Controllers\proyectosDeSoftware\HistoriaController.php(17): view('proyectosDeSoftware/generaAleatorio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-07 22:20:53 --> ErrorException: Array to string conversion
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio/nombre]
+in APPPATH\Views\proyectosDeSoftware\generaAleatorio.php on line 70.
+ 1 APPPATH\Views\proyectosDeSoftware\generaAleatorio.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosDeSoftware/generaAleatorio', [], true)
+ 5 APPPATH\Controllers\proyectosDeSoftware\HistoriaController.php(17): view('proyectosDeSoftware/generaAleatorio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-07 22:21:09 --> ErrorException: Array to string conversion
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio/nombre]
+in APPPATH\Views\proyectosDeSoftware\generaAleatorio.php on line 70.
+ 1 APPPATH\Views\proyectosDeSoftware\generaAleatorio.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosDeSoftware/generaAleatorio', [], true)
+ 5 APPPATH\Controllers\proyectosDeSoftware\HistoriaController.php(17): view('proyectosDeSoftware/generaAleatorio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-07 22:22:00 --> ErrorException: Array to string conversion
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio/nombre]
+in APPPATH\Views\proyectosDeSoftware\generaAleatorio.php on line 70.
+ 1 APPPATH\Views\proyectosDeSoftware\generaAleatorio.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosDeSoftware/generaAleatorio', [], true)
+ 5 APPPATH\Controllers\proyectosDeSoftware\HistoriaController.php(17): view('proyectosDeSoftware/generaAleatorio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-07 22:22:02 --> ErrorException: Array to string conversion
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio/nombre]
+in APPPATH\Views\proyectosDeSoftware\generaAleatorio.php on line 70.
+ 1 APPPATH\Views\proyectosDeSoftware\generaAleatorio.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosDeSoftware/generaAleatorio', [], true)
+ 5 APPPATH\Controllers\proyectosDeSoftware\HistoriaController.php(17): view('proyectosDeSoftware/generaAleatorio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-07 22:22:02 --> ErrorException: Array to string conversion
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio/nombre]
+in APPPATH\Views\proyectosDeSoftware\generaAleatorio.php on line 70.
+ 1 APPPATH\Views\proyectosDeSoftware\generaAleatorio.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosDeSoftware/generaAleatorio', [], true)
+ 5 APPPATH\Controllers\proyectosDeSoftware\HistoriaController.php(17): view('proyectosDeSoftware/generaAleatorio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-07 22:23:27 --> ErrorException: Array to string conversion
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio/nombre]
+in APPPATH\Views\proyectosDeSoftware\generaAleatorio.php on line 70.
+ 1 APPPATH\Views\proyectosDeSoftware\generaAleatorio.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosDeSoftware/generaAleatorio', [], true)
+ 5 APPPATH\Controllers\proyectosDeSoftware\HistoriaController.php(22): view('proyectosDeSoftware/generaAleatorio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-07 22:23:57 --> ErrorException: Array to string conversion
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio/nombre]
+in APPPATH\Views\proyectosDeSoftware\generaAleatorio.php on line 70.
+ 1 APPPATH\Views\proyectosDeSoftware\generaAleatorio.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosDeSoftware/generaAleatorio', [], true)
+ 5 APPPATH\Controllers\proyectosDeSoftware\HistoriaController.php(22): view('proyectosDeSoftware/generaAleatorio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-07 22:25:31 --> ErrorException: Array to string conversion
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio/nombre]
+in APPPATH\Views\proyectosDeSoftware\generaAleatorio.php on line 70.
+ 1 APPPATH\Views\proyectosDeSoftware\generaAleatorio.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\proyectosDeSoftware\\generaAleatorio.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('proyectosDeSoftware/generaAleatorio', [], true)
+ 5 APPPATH\Controllers\proyectosDeSoftware\HistoriaController.php(22): view('proyectosDeSoftware/generaAleatorio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosDeSoftware\HistoriaController->mostrarNombre()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosDeSoftware\HistoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-07 22:36:31 --> ParseError: syntax error, unexpected token "}", expecting variable
+[Method: GET, Route: proyectosDeSoftware/generaAleatorio/nombre]
+in APPPATH\Controllers\proyectosDeSoftware\HistoriaController.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\proyectoDW\\app\\Controllers\\proyectosDeSoftware\\HistoriaController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\proyectosDeSoftware\\HistoriaController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\proyectosDeSoftware\\HistoriaController')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\proyectosDeSoftware\\HistoriaController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

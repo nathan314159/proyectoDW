@@ -29,7 +29,6 @@ $routes->group('trabajos', function ($routes) {
     $routes->get('semana10', 'trabajoEnClase\Semana_10Controller::index');
     $routes->get('semana10/card', 'trabajoEnClase\Semana_10Controller::card');
     $routes->get('semana10/triangulo', 'trabajoEnClase\Semana_10Controller::triangulo');
-
 });
 
 $routes->group('deberes', function ($routes) {
@@ -63,11 +62,6 @@ $routes->group('deberes', function ($routes) {
     $routes->get('semana10/carteras/(:num)', 'deberes\semana10\CarterasController::verCartera/$1');
     $routes->get('semana10/zapatos/(:num)', 'deberes\semana10\ZapatosController::verZapatos/$1');
     $routes->get('semana10/vestidos/(:num)', 'deberes\semana10\VestidosController::vervestidos/$1');
-
-
-
-
-
 });
 
 $routes->group('proyectos', function ($routes) {
@@ -77,9 +71,16 @@ $routes->group('proyectos', function ($routes) {
     $routes->get('estilo', 'juegos\MoverObjeto::estiloCss1');
     $routes->get('suma', "trabajoEnClase\semana_9\practica1\SumaController::funcSumar");
     $routes->post('suma/respuesta', 'trabajoEnClase\semana_9\practica1\SumaController::funcRespuesta');
+
+    // ajax
+    $routes->get('ajax', 'proyectosPersonales\ajax\Empleado::index');
+    $routes->post('insertar-empleado', 'proyectosPersonales\ajax\Empleado::insertar');
 });
 
-// $routes->group('admin', function ($routes){
-//     $routes->get('suma', "proyectosPersonales\SumaController::funcSumar");
-//     $routes->post('suma/respuesta', 'proyectosPersonales\SumaController::funcRespuesta');
-// });
+
+// en esta ruta esta los trabajos de la materia de proyectos de software
+$routes->group('proyectosDeSoftware', function ($routes) {
+    $routes->get('generaAleatorio', "proyectosDeSoftware\HistoriaController::index");
+    $routes->get('generaAleatorio/nombre', 'proyectosDeSoftware\HistoriaController::mostrarNombre');
+
+});

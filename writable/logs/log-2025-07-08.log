@@ -1,0 +1,92 @@
+CRITICAL - 2025-07-08 19:37:53 --> CodeIgniter\Exceptions\InvalidArgumentException: "ajaxEmpaple" is not a valid database connection group.
+[Method: POST, Route: proyectos/insertar-empleado]
+in SYSTEMPATH\Database\Config.php on line 70.
+ 1 APPPATH\Controllers\proyectosPersonales\ajax\Empleado.php(19): CodeIgniter\Database\Config::connect('ajaxEmpaple')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\ajax\Empleado->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\ajax\Empleado))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-08 19:42:02 --> CodeIgniter\Exceptions\InvalidArgumentException: "ajaxEmpaple" is not a valid database connection group.
+[Method: POST, Route: proyectos/insertar-empleado]
+in SYSTEMPATH\Database\Config.php on line 70.
+ 1 APPPATH\Controllers\proyectosPersonales\ajax\Empleado.php(19): CodeIgniter\Database\Config::connect('ajaxEmpaple')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\ajax\Empleado->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\ajax\Empleado))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-08 19:56:15 --> Error: Class "App\Models\EmpleadoModel" not found
+[Method: POST, Route: proyectos/insertar-empleado]
+in APPPATH\Controllers\proyectosPersonales\ajax\Empleado.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\ajax\Empleado->insertar()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\ajax\Empleado))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-08 19:56:44 --> Error: Class "App\Models\EmpleadoModel" not found
+[Method: POST, Route: proyectos/insertar-empleado]
+in APPPATH\Controllers\proyectosPersonales\ajax\Empleado.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\ajax\Empleado->insertar()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\ajax\Empleado))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-08 19:56:45 --> Error: Class "App\Models\EmpleadoModel" not found
+[Method: POST, Route: proyectos/insertar-empleado]
+in APPPATH\Controllers\proyectosPersonales\ajax\Empleado.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\ajax\Empleado->insertar()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\ajax\Empleado))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-08 19:56:45 --> Error: Class "App\Models\EmpleadoModel" not found
+[Method: POST, Route: proyectos/insertar-empleado]
+in APPPATH\Controllers\proyectosPersonales\ajax\Empleado.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\ajax\Empleado->insertar()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\ajax\Empleado))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-08 19:56:53 --> Error: Class "App\Models\EmpleadoModel" not found
+[Method: POST, Route: proyectos/insertar-empleado]
+in APPPATH\Controllers\proyectosPersonales\ajax\Empleado.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\ajax\Empleado->insertar()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\ajax\Empleado))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-08 20:03:43 --> Error: Class "App\Models\EmpleadoModel" not found
+[Method: POST, Route: proyectos/insertar-empleado]
+in APPPATH\Controllers\proyectosPersonales\ajax\Empleado.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\ajax\Empleado->insertar()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\ajax\Empleado))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-08 20:04:44 --> Error: Class "App\Models\EmpleadoModel" not found
+[Method: POST, Route: proyectos/insertar-empleado]
+in APPPATH\Controllers\proyectosPersonales\ajax\Empleado.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\ajax\Empleado->insertar()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\ajax\Empleado))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-08 20:06:46 --> Error: Class "App\Models\EmpleadoModel" not found
+[Method: POST, Route: proyectos/insertar-empleado]
+in APPPATH\Controllers\proyectosPersonales\ajax\Empleado.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\proyectosPersonales\ajax\Empleado->insertar()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\proyectosPersonales\ajax\Empleado))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
