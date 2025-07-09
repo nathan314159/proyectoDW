@@ -75,6 +75,10 @@ $routes->group('proyectos', function ($routes) {
     // ajax
     $routes->get('ajax', 'proyectosPersonales\ajax\Empleado::index');
     $routes->post('insertar-empleado', 'proyectosPersonales\ajax\Empleado::insertar');
+
+    // practicaConModelos
+    $routes->get('practica', 'proyectosPersonales\practicaConModelos\EmpleadoController::index');
+    $routes->post('practica/insertar', 'proyectosPersonales\practicaConModelos\EmpleadoController::insertar');
 });
 
 
@@ -82,5 +86,4 @@ $routes->group('proyectos', function ($routes) {
 $routes->group('proyectosDeSoftware', function ($routes) {
     $routes->get('generaAleatorio', "proyectosDeSoftware\HistoriaController::index");
     $routes->get('generaAleatorio/nombre', 'proyectosDeSoftware\HistoriaController::mostrarNombre');
-
 });
