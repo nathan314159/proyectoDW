@@ -79,6 +79,11 @@ $routes->group('proyectos', function ($routes) {
     // practicaConModelos
     $routes->get('practica', 'proyectosPersonales\practicaConModelos\EmpleadoController::index');
     $routes->post('practica/insertar', 'proyectosPersonales\practicaConModelos\EmpleadoController::insertar');
+
+    //prectica Formulario Estudiante
+    $routes->get('practica/estudiante', 'proyectosPersonales\practicaConModelos\EstudianteController::index');
+    $routes->post('practica/estudiante', 'proyectosPersonales\practicaConModelos\EstudianteController::insertarEstudiante');
+    $routes->delete('practica/estudiante/(:num)', 'proyectosPersonales\practicaConModelos\EstudianteController::eliminarEstudiante/$1');
 });
 
 
