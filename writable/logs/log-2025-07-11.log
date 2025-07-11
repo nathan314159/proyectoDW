@@ -1,0 +1,688 @@
+CRITICAL - 2025-07-11 00:15:07 --> ParseError: syntax error, unexpected token "\", expecting "{"
+[Method: GET, Route: trabajos/semana11]
+in APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\proyectoDW\\app\\Controllers\\trabajoEnClase\\Semana_11Controller.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\trabajoEnClase\\Semana_11Controller')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\trabajoEnClase\\Semana_11Controller')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\trabajoEnClase\\Semana_11Controller', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-11 00:51:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1 in C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUAR...', 0)
+#1 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUAR...')
+#2 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUAR...')
+#3 C:\xampp\htdocs\proyectoDW\app\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUAR...')
+#4 C:\xampp\htdocs\proyectoDW\app\Controllers\trabajoEnClase\Semana_11Controller.php(25): App\Models\Semana_11Model->mostrarUsuario()
+#5 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+#6 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+#7 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoDW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\proyectoDW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\proyectoDW\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-07-11 00:51:42 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1
+[Method: GET, Route: trabajos/semana11/mostrar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIO()')
+ 2 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(25): App\Models\Semana_11Model->mostrarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 00:51:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIO()')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIO()')
+ 3 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIO()')
+ 4 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(25): App\Models\Semana_11Model->mostrarUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 00:51:42 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUARIO()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIO()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIO()')
+ 4 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIO()')
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(25): App\Models\Semana_11Model->mostrarUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-11 00:53:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1 in C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUAR...', 0)
+#1 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUAR...')
+#2 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUAR...')
+#3 C:\xampp\htdocs\proyectoDW\app\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUAR...')
+#4 C:\xampp\htdocs\proyectoDW\app\Controllers\trabajoEnClase\Semana_11Controller.php(25): App\Models\Semana_11Model->mostrarUsuario()
+#5 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+#6 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+#7 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoDW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\proyectoDW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\proyectoDW\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-07-11 00:53:16 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1
+[Method: GET, Route: trabajos/semana11/mostrar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIO()')
+ 2 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(25): App\Models\Semana_11Model->mostrarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 00:53:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIO()')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIO()')
+ 3 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIO()')
+ 4 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(25): App\Models\Semana_11Model->mostrarUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 00:53:16 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUARIO()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIO()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIO()')
+ 4 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIO()')
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(25): App\Models\Semana_11Model->mostrarUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-11 00:55:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1 in C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUAR...', 0)
+#1 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUAR...')
+#2 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUAR...')
+#3 C:\xampp\htdocs\proyectoDW\app\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUAR...')
+#4 C:\xampp\htdocs\proyectoDW\app\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+#5 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+#6 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+#7 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoDW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\proyectoDW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\proyectoDW\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-07-11 00:55:51 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1
+[Method: GET, Route: trabajos/semana11/mostrar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIO()')
+ 2 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 00:55:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIO()')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIO()')
+ 3 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIO()')
+ 4 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 00:55:51 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUARIO()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIO()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIO()')
+ 4 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIO()')
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-11 00:55:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1 in C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUAR...', 0)
+#1 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUAR...')
+#2 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUAR...')
+#3 C:\xampp\htdocs\proyectoDW\app\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUAR...')
+#4 C:\xampp\htdocs\proyectoDW\app\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+#5 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+#6 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+#7 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoDW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\proyectoDW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\proyectoDW\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-07-11 00:55:52 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1
+[Method: GET, Route: trabajos/semana11/mostrar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIO()')
+ 2 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 00:55:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIO()')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIO()')
+ 3 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIO()')
+ 4 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 00:55:52 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIO()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUARIO()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIO()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIO()')
+ 4 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIO()')
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-11 00:59:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1 in C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUAR...', 0)
+#1 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUAR...')
+#2 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUAR...')
+#3 C:\xampp\htdocs\proyectoDW\app\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUAR...')
+#4 C:\xampp\htdocs\proyectoDW\app\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+#5 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+#6 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+#7 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoDW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\proyectoDW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\proyectoDW\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-07-11 00:59:24 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1
+[Method: GET, Route: trabajos/semana11/mostrar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIOS()')
+ 2 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 00:59:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIOS()')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIOS()')
+ 3 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIOS()')
+ 4 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 00:59:24 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUARIOS()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIOS()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIOS()')
+ 4 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIOS()')
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-11 00:59:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1 in C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUAR...', 0)
+#1 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUAR...')
+#2 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUAR...')
+#3 C:\xampp\htdocs\proyectoDW\app\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUAR...')
+#4 C:\xampp\htdocs\proyectoDW\app\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+#5 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+#6 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+#7 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoDW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\proyectoDW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\proyectoDW\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-07-11 00:59:25 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1
+[Method: GET, Route: trabajos/semana11/mostrar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIOS()')
+ 2 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 00:59:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIOS()')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIOS()')
+ 3 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIOS()')
+ 4 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 00:59:25 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUARIOS()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIOS()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIOS()')
+ 4 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIOS()')
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-11 01:00:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1 in C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUAR...', 0)
+#1 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUAR...')
+#2 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUAR...')
+#3 C:\xampp\htdocs\proyectoDW\app\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUAR...')
+#4 C:\xampp\htdocs\proyectoDW\app\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+#5 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+#6 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+#7 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoDW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\proyectoDW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\proyectoDW\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-07-11 01:00:49 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1
+[Method: GET, Route: trabajos/semana11/mostrar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIOS()')
+ 2 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:00:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIOS()')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIOS()')
+ 3 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIOS()')
+ 4 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:00:49 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUARIOS()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIOS()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIOS()')
+ 4 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIOS()')
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-11 01:00:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1 in C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUAR...', 0)
+#1 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUAR...')
+#2 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUAR...')
+#3 C:\xampp\htdocs\proyectoDW\app\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUAR...')
+#4 C:\xampp\htdocs\proyectoDW\app\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+#5 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+#6 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+#7 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoDW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\proyectoDW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\proyectoDW\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-07-11 01:00:49 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1
+[Method: GET, Route: trabajos/semana11/mostrar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIOS()')
+ 2 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:00:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIOS()')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIOS()')
+ 3 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIOS()')
+ 4 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:00:49 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUARIOS()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIOS()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIOS()')
+ 4 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIOS()')
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-11 01:00:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1 in C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUAR...', 0)
+#1 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUAR...')
+#2 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUAR...')
+#3 C:\xampp\htdocs\proyectoDW\app\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUAR...')
+#4 C:\xampp\htdocs\proyectoDW\app\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+#5 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+#6 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+#7 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoDW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\proyectoDW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\proyectoDW\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-07-11 01:00:50 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1
+[Method: GET, Route: trabajos/semana11/mostrar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIOS()')
+ 2 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:00:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIOS()')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIOS()')
+ 3 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIOS()')
+ 4 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:00:50 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SP_SELECT_USUARIOS()' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SP_SELECT_USUARIOS()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SP_SELECT_USUARIOS()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SP_SELECT_USUARIOS()')
+ 4 APPPATH\Models\Semana_11Model.php(12): CodeIgniter\Database\BaseConnection->query('SP_SELECT_USUARIOS()')
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(26): App\Models\Semana_11Model->mostrarUsuario()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:02:36 --> CodeIgniter\Exceptions\InvalidArgumentException: "" is not a valid database connection group.
+[Method: GET, Route: trabajos/semana11/mostrar]
+in SYSTEMPATH\Database\Config.php on line 70.
+ 1 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(23): CodeIgniter\Database\Config::connect('')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:02:37 --> CodeIgniter\Exceptions\InvalidArgumentException: "" is not a valid database connection group.
+[Method: GET, Route: trabajos/semana11/mostrar]
+in SYSTEMPATH\Database\Config.php on line 70.
+ 1 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(23): CodeIgniter\Database\Config::connect('')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:04:24 --> CodeIgniter\Exceptions\InvalidArgumentException: "" is not a valid database connection group.
+[Method: GET, Route: semana11/mostrar]
+in SYSTEMPATH\Database\Config.php on line 70.
+ 1 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(23): CodeIgniter\Database\Config::connect('')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:15:02 --> ErrorException: Undefined variable $datosEnviados
+[Method: GET, Route: trabajos/semana11/mostrar]
+in APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php on line 20.
+ 1 APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datosEnviados', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php', 20)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_11/vistaSelect', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(31): view('trabajoEnClase/semana_11/vistaSelect', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:32:54 --> ErrorException: Undefined array key "usu_id"
+[Method: GET, Route: trabajos/semana11/mostrar/novias]
+in APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php on line 23.
+ 1 APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usu_id"', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_11/vistaSelect', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(40): view('trabajoEnClase/semana_11/vistaSelect', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarNovias()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:33:24 --> ErrorException: Undefined array key "usu_id"
+[Method: GET, Route: trabajos/semana11/mostrar/novias]
+in APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php on line 23.
+ 1 APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usu_id"', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_11/vistaSelect', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(40): view('trabajoEnClase/semana_11/vistaSelect', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarNovias()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:33:25 --> ErrorException: Undefined array key "usu_id"
+[Method: GET, Route: trabajos/semana11/mostrar/novias]
+in APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php on line 23.
+ 1 APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usu_id"', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_11/vistaSelect', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(40): view('trabajoEnClase/semana_11/vistaSelect', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarNovias()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:34:35 --> ErrorException: Undefined array key "nov_id"
+[Method: GET, Route: trabajos/semana11/mostrar]
+in APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php on line 48.
+ 1 APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nov_id"', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_11/vistaSelect', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(29): view('trabajoEnClase/semana_11/vistaSelect', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:35:12 --> ErrorException: Undefined array key "nov_id"
+[Method: GET, Route: trabajos/semana11/mostrar]
+in APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php on line 48.
+ 1 APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nov_id"', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_11/vistaSelect', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(30): view('trabajoEnClase/semana_11/vistaSelect', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:35:13 --> ErrorException: Undefined array key "nov_id"
+[Method: GET, Route: trabajos/semana11/mostrar]
+in APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php on line 48.
+ 1 APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nov_id"', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_11/vistaSelect', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(30): view('trabajoEnClase/semana_11/vistaSelect', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:37:14 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: trabajos/semana11/mostrar]
+in APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php on line 45.
+ 1 APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_11/vistaSelect', [...], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(33): view('trabajoEnClase/semana_11/vistaSelect', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:37:15 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: trabajos/semana11/mostrar]
+in APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php on line 45.
+ 1 APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_11/vistaSelect', [...], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(33): view('trabajoEnClase/semana_11/vistaSelect', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:38:52 --> ErrorException: Undefined array key "nov_id"
+[Method: GET, Route: trabajos/semana11/mostrar]
+in APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php on line 48.
+ 1 APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nov_id"', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_11/vistaSelect', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(31): view('trabajoEnClase/semana_11/vistaSelect', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:39:39 --> ErrorException: Undefined array key "nov_id"
+[Method: GET, Route: trabajos/semana11/mostrar]
+in APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php on line 48.
+ 1 APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nov_id"', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_11/vistaSelect', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(31): view('trabajoEnClase/semana_11/vistaSelect', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:39:40 --> ErrorException: Undefined array key "nov_id"
+[Method: GET, Route: trabajos/semana11/mostrar]
+in APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php on line 48.
+ 1 APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nov_id"', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_11/vistaSelect', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(31): view('trabajoEnClase/semana_11/vistaSelect', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:43:06 --> ErrorException: Undefined array key "nov_id"
+[Method: GET, Route: trabajos/semana11/mostrar]
+in APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php on line 48.
+ 1 APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nov_id"', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_11/vistaSelect', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(32): view('trabajoEnClase/semana_11/vistaSelect', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-11 01:43:07 --> ErrorException: Undefined array key "nov_id"
+[Method: GET, Route: trabajos/semana11/mostrar]
+in APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php on line 48.
+ 1 APPPATH\Views\trabajoEnClase\semana_11\vistaSelect.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nov_id"', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_11\\vistaSelect.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_11/vistaSelect', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_11Controller.php(32): view('trabajoEnClase/semana_11/vistaSelect', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_11Controller->mostrarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_11Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

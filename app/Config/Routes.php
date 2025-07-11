@@ -30,6 +30,11 @@ $routes->group('trabajos', function ($routes) {
     $routes->get('semana10/card', 'trabajoEnClase\Semana_10Controller::card');
     $routes->get('semana10/triangulo', 'trabajoEnClase\Semana_10Controller::triangulo');
 
+    // semana 11
+    $routes->get('semana11', 'trabajoEnClase\Semana_11Controller::index');
+    $routes->get('semana11/mostrar', 'trabajoEnClase\Semana_11Controller::mostrarUsuarios');
+    $routes->get('semana11/mostrar/novias', 'trabajoEnClase\Semana_11Controller::mostrarNovias');
+
 });
 
 $routes->group('deberes', function ($routes) {
