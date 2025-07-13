@@ -34,7 +34,6 @@ $routes->group('trabajos', function ($routes) {
     $routes->get('semana11', 'trabajoEnClase\Semana_11Controller::index');
     $routes->get('semana11/mostrar', 'trabajoEnClase\Semana_11Controller::mostrarUsuarios');
     $routes->get('semana11/mostrar/novias', 'trabajoEnClase\Semana_11Controller::mostrarNovias');
-
 });
 
 $routes->group('deberes', function ($routes) {
@@ -68,11 +67,6 @@ $routes->group('deberes', function ($routes) {
     $routes->get('semana10/carteras/(:num)', 'deberes\semana10\CarterasController::verCartera/$1');
     $routes->get('semana10/zapatos/(:num)', 'deberes\semana10\ZapatosController::verZapatos/$1');
     $routes->get('semana10/vestidos/(:num)', 'deberes\semana10\VestidosController::vervestidos/$1');
-
-
-
-
-
 });
 
 $routes->group('proyectos', function ($routes) {
@@ -82,6 +76,11 @@ $routes->group('proyectos', function ($routes) {
     $routes->get('estilo', 'juegos\MoverObjeto::estiloCss1');
     $routes->get('suma', "trabajoEnClase\semana_9\practica1\SumaController::funcSumar");
     $routes->post('suma/respuesta', 'trabajoEnClase\semana_9\practica1\SumaController::funcRespuesta');
+
+    // practicas formularios
+    $routes->get('empleado', 'proyectosPersonales\formularios\EmpleadoController::index');
+    $routes->post('empleado/post', 'proyectosPersonales\formularios\EmpleadoController::insertarEmpleado');
+
 });
 
 // $routes->group('admin', function ($routes){
