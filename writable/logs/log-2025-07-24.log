@@ -1,0 +1,80 @@
+CRITICAL - 2025-07-24 23:55:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'basket'
+[Method: GET, Route: trabajos/semana13]
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 246.
+ 1 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(14): CodeIgniter\Database\MySQLi\Connection->connect()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-24 23:55:02 --> [Caused by] mysqli_sql_exception: Unknown database 'basket'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 201.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'basket', 3306, '', 0)
+ 2 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(14): CodeIgniter\Database\MySQLi\Connection->connect()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-24 23:56:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'basket'
+[Method: GET, Route: trabajos/semana13]
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 246.
+ 1 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(14): CodeIgniter\Database\MySQLi\Connection->connect()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-24 23:56:38 --> [Caused by] mysqli_sql_exception: Unknown database 'basket'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 201.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'basket', 3306, '', 0)
+ 2 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(14): CodeIgniter\Database\MySQLi\Connection->connect()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-24 23:56:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'basket'
+[Method: GET, Route: trabajos/semana13]
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 246.
+ 1 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(14): CodeIgniter\Database\MySQLi\Connection->connect()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-24 23:56:39 --> [Caused by] mysqli_sql_exception: Unknown database 'basket'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 201.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'basket', 3306, '', 0)
+ 2 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(14): CodeIgniter\Database\MySQLi\Connection->connect()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-24 23:56:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'basket'
+[Method: GET, Route: trabajos/semana13]
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 246.
+ 1 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(14): CodeIgniter\Database\MySQLi\Connection->connect()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-24 23:56:42 --> [Caused by] mysqli_sql_exception: Unknown database 'basket'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 201.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'basket', 3306, '', 0)
+ 2 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(14): CodeIgniter\Database\MySQLi\Connection->connect()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

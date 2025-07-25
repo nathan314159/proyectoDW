@@ -34,6 +34,13 @@ $routes->group('trabajos', function ($routes) {
     $routes->get('semana11', 'trabajoEnClase\Semana_11Controller::index');
     $routes->get('semana11/mostrar', 'trabajoEnClase\Semana_11Controller::mostrarUsuarios');
     $routes->get('semana11/mostrar/novias', 'trabajoEnClase\Semana_11Controller::mostrarNovias');
+
+    // semana 13
+    $routes->get('semana13', 'trabajoEnClase\Semana_13Controller::mostrarUsuarios');
+    $routes->get('usuarios/editar/(:num)/(:num)/(:num)/(:num)/(:num)', 'trabajoEnClase\Semana_13Controller::editar/$1/$2/$3/$4/$5');
+    $routes->get('usuarios/guardar/', 'trabajoEnClase\Semana_13Controller::guardar');
+
+
 });
 
 $routes->group('deberes', function ($routes) {

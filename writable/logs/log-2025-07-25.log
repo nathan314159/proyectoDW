@@ -1,0 +1,212 @@
+ERROR - 2025-07-25 00:23:58 --> mysqli_sql_exception: PROCEDURE bdd_actualizar.SP_SELECT_USUARIO_ID does not exist in C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php(327): mysqli->query('CALL SP_SELECT_...', 0)
+#1 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CALL SP_SELECT_...')
+#2 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CALL SP_SELECT_...')
+#3 C:\xampp\htdocs\proyectoDW\app\Models\Semana_13Model.php(58): CodeIgniter\Database\BaseConnection->query('CALL SP_SELECT_...', Array)
+#4 C:\xampp\htdocs\proyectoDW\app\Controllers\trabajoEnClase\Semana_13Controller.php(39): App\Models\Semana_13Model->mostrarUsuarioPorId('1')
+#5 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('1')
+#6 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+#7 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoDW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\proyectoDW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\proyectoDW\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-07-25 00:23:58 --> CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE bdd_actualizar.SP_SELECT_USUARIO_ID does not exist
+[Method: GET, Route: trabajos/usuarios/editar/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Semana_13Model.php(58): CodeIgniter\Database\BaseConnection->query('CALL SP_SELECT_USUARIO_ID(?)', [...])
+ 2 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(39): App\Models\Semana_13Model->mostrarUsuarioPorId('1')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('1')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-25 00:23:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: PROCEDURE bdd_actualizar.SP_SELECT_USUARIO_ID does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CALL SP_SELECT_USUARIO_ID(\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CALL SP_SELECT_USUARIO_ID(\'1\')')
+ 3 APPPATH\Models\Semana_13Model.php(58): CodeIgniter\Database\BaseConnection->query('CALL SP_SELECT_USUARIO_ID(?)', [...])
+ 4 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(39): App\Models\Semana_13Model->mostrarUsuarioPorId('1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-25 00:23:58 --> [Caused by] mysqli_sql_exception: PROCEDURE bdd_actualizar.SP_SELECT_USUARIO_ID does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('CALL SP_SELECT_USUARIO_ID(\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CALL SP_SELECT_USUARIO_ID(\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CALL SP_SELECT_USUARIO_ID(\'1\')')
+ 4 APPPATH\Models\Semana_13Model.php(58): CodeIgniter\Database\BaseConnection->query('CALL SP_SELECT_USUARIO_ID(?)', [...])
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(39): App\Models\Semana_13Model->mostrarUsuarioPorId('1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-25 00:28:11 --> mysqli_sql_exception: Table 'bdd_actualizar.tbl_usuario' doesn't exist in C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyectoDW\system\Database\MySQLi\Connection.php(327): mysqli->query('CALL SP_SELECT_...', 0)
+#1 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CALL SP_SELECT_...')
+#2 C:\xampp\htdocs\proyectoDW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CALL SP_SELECT_...')
+#3 C:\xampp\htdocs\proyectoDW\app\Models\Semana_13Model.php(58): CodeIgniter\Database\BaseConnection->query('CALL SP_SELECT_...', Array)
+#4 C:\xampp\htdocs\proyectoDW\app\Controllers\trabajoEnClase\Semana_13Controller.php(39): App\Models\Semana_13Model->mostrarUsuarioPorId('1')
+#5 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('1')
+#6 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+#7 C:\xampp\htdocs\proyectoDW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoDW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\proyectoDW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\proyectoDW\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-07-25 00:28:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'bdd_actualizar.tbl_usuario' doesn't exist
+[Method: GET, Route: trabajos/usuarios/editar/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Semana_13Model.php(58): CodeIgniter\Database\BaseConnection->query('CALL SP_SELECT_USUARIO_ID(?)', [...])
+ 2 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(39): App\Models\Semana_13Model->mostrarUsuarioPorId('1')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('1')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-25 00:28:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'bdd_actualizar.tbl_usuario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CALL SP_SELECT_USUARIO_ID(\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CALL SP_SELECT_USUARIO_ID(\'1\')')
+ 3 APPPATH\Models\Semana_13Model.php(58): CodeIgniter\Database\BaseConnection->query('CALL SP_SELECT_USUARIO_ID(?)', [...])
+ 4 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(39): App\Models\Semana_13Model->mostrarUsuarioPorId('1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-25 00:28:11 --> [Caused by] mysqli_sql_exception: Table 'bdd_actualizar.tbl_usuario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('CALL SP_SELECT_USUARIO_ID(\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CALL SP_SELECT_USUARIO_ID(\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CALL SP_SELECT_USUARIO_ID(\'1\')')
+ 4 APPPATH\Models\Semana_13Model.php(58): CodeIgniter\Database\BaseConnection->query('CALL SP_SELECT_USUARIO_ID(?)', [...])
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(39): App\Models\Semana_13Model->mostrarUsuarioPorId('1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-25 01:06:40 --> ErrorException: Undefined variable $data
+[Method: GET, Route: trabajos/usuarios/editar/1/1/1/1/1]
+in APPPATH\Views\trabajoEnClase\semana_13\editar.php on line 10.
+ 1 APPPATH\Views\trabajoEnClase\semana_13\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_13/editar', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(67): view('trabajoEnClase/semana_13/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('1', '1', '1', '1', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-25 01:07:37 --> ErrorException: Undefined variable $data
+[Method: GET, Route: trabajos/usuarios/editar/1/1/1/1/1]
+in APPPATH\Views\trabajoEnClase\semana_13\editar.php on line 10.
+ 1 APPPATH\Views\trabajoEnClase\semana_13\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_13/editar', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(67): view('trabajoEnClase/semana_13/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('1', '1', '1', '1', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-25 01:07:39 --> ErrorException: Undefined variable $data
+[Method: GET, Route: trabajos/usuarios/editar/1/1/1/1/1]
+in APPPATH\Views\trabajoEnClase\semana_13\editar.php on line 10.
+ 1 APPPATH\Views\trabajoEnClase\semana_13\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_13/editar', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(67): view('trabajoEnClase/semana_13/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('1', '1', '1', '1', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-25 01:07:40 --> ErrorException: Undefined variable $data
+[Method: GET, Route: trabajos/usuarios/editar/1/1/1/1/1]
+in APPPATH\Views\trabajoEnClase\semana_13\editar.php on line 10.
+ 1 APPPATH\Views\trabajoEnClase\semana_13\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_13/editar', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(67): view('trabajoEnClase/semana_13/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('1', '1', '1', '1', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-25 01:08:41 --> ErrorException: Undefined variable $data
+[Method: GET, Route: trabajos/usuarios/editar/1/1/1/1/1]
+in APPPATH\Views\trabajoEnClase\semana_13\editar.php on line 10.
+ 1 APPPATH\Views\trabajoEnClase\semana_13\editar.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_13/editar', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(67): view('trabajoEnClase/semana_13/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('1', '1', '1', '1', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-25 01:21:45 --> ErrorException: Undefined array key "id_departamento"
+[Method: GET, Route: trabajos/usuarios/editar/1/1/1/1/1]
+in APPPATH\Views\trabajoEnClase\semana_13\editar.php on line 27.
+ 1 APPPATH\Views\trabajoEnClase\semana_13\editar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamento"', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_13/editar', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(67): view('trabajoEnClase/semana_13/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('1', '1', '1', '1', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-25 01:35:49 --> ErrorException: Undefined variable $id_provincia
+[Method: GET, Route: trabajos/usuarios/editar/1/1/1/1/1]
+in APPPATH\Views\trabajoEnClase\semana_13\editar.php on line 33.
+ 1 APPPATH\Views\trabajoEnClase\semana_13\editar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_provincia', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_13/editar', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(67): view('trabajoEnClase/semana_13/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('1', '1', '1', '1', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-25 01:37:43 --> ErrorException: Undefined variable $id_estados
+[Method: GET, Route: trabajos/usuarios/editar/4/3/3/2/1]
+in APPPATH\Views\trabajoEnClase\semana_13\editar.php on line 40.
+ 1 APPPATH\Views\trabajoEnClase\semana_13\editar.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_estados', 'C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyectoDW\\app\\Views\\trabajoEnClase\\semana_13\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('trabajoEnClase/semana_13/editar', [], true)
+ 5 APPPATH\Controllers\trabajoEnClase\Semana_13Controller.php(67): view('trabajoEnClase/semana_13/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\trabajoEnClase\Semana_13Controller->editar('4', '3', '3', '2', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\trabajoEnClase\Semana_13Controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

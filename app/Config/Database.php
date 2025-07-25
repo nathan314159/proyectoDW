@@ -29,7 +29,7 @@ class Database extends Config
         'hostname'     => 'localhost',
         'username'     => 'root',
         'password'     => '',
-        'database'     => 'basket',
+        'database'     => 'bdd_actualizar',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
@@ -50,6 +50,9 @@ class Database extends Config
             'time'     => 'H:i:s',
         ],
     ];
+
+
+
 
     //    /**
     //     * Sample database connection for SQLite3.
